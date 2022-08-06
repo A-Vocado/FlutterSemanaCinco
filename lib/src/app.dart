@@ -1,3 +1,4 @@
+import 'package:exercicio_semana_5/src/pages/login_page.dart';
 import 'package:flutter/material.dart';
 
 class App extends StatelessWidget {
@@ -5,10 +6,8 @@ class App extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(initialRoute: '/login', routes: {
-      '/login': (context) => const LoginPage(),
-      '/userPage': (context) => const UserPage(),
-      '/error': (context) => const ErrorPage(),
+    return MaterialApp(initialRoute: '/', routes: {
+      '/': (context) => const LoginPage(),
     });
   }
 }
