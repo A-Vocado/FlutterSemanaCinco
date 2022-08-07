@@ -27,10 +27,13 @@ class _LoginPageState extends State<LoginPage> {
         autovalidateMode: AutovalidateMode.onUserInteraction,
         key: formKey,
         child: Padding(
-          padding: const EdgeInsets.only(top: 220),
+          padding: const EdgeInsets.only(top: 64),
           child: Column(
             children: [
-              const ZTextH1(text: 'text'),
+              const Padding(
+                padding: EdgeInsets.symmetric(vertical: 50.0),
+                child: ZTextH1(text: 'Olá! Seja bem-vindo!'),
+              ),
               ZFormField(
                 controller: emailController,
                 hintText: 'Insira seu e-mail para fazer login',

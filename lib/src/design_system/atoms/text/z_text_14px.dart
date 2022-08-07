@@ -12,7 +12,7 @@ class ZText14 extends StatelessWidget {
         fontWeight: FontWeight.w700,
         fontFamily: 'Urbanist',
         fontSize: 14,
-        color: Color(0x001E232C),
+        color: Colors.black,
       ),
     );
   }

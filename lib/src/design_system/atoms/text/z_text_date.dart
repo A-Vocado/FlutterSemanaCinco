@@ -12,7 +12,7 @@ class ZTextDate extends StatelessWidget {
         fontWeight: FontWeight.w700,
         fontFamily: 'Urbanist',
         fontSize: 14,
-        color: Color(0x00128833),
+        color: Color(0xFF128833),
       ),
     );
   }

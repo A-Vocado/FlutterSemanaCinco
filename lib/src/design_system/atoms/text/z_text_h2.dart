@@ -12,7 +12,7 @@ class ZTextH2 extends StatelessWidget {
         fontWeight: FontWeight.w700,
         fontFamily: 'Urbanist',
         fontSize: 26,
-        color: Color(0x001E232C),
+        color: Color(0xFF1E232C),
       ),
     );
   }

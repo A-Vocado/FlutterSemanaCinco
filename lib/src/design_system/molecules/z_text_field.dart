@@ -26,7 +26,7 @@ class ZFormField extends StatelessWidget {
   final OutlineInputBorder defaultBorder = OutlineInputBorder(
     borderRadius: BorderRadius.circular(8.0),
     borderSide: const BorderSide(
-      color: Color.fromARGB(255, 30, 35, 44),
+      color: Color(0xFF1E232C),
       width: 1.0,
     ),
   );

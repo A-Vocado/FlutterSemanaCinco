@@ -19,7 +19,7 @@ class ZElevatedButton extends StatelessWidget {
         style: ElevatedButton.styleFrom(
           shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
           textStyle: const TextStyle(fontFamily: 'Urbanist'),
-          primary: const Color(0x0001e232),
+          primary: Color(0xFF1E232C),
           minimumSize: const Size(348, 56),
         ),
         child: child,

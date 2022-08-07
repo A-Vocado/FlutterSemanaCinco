@@ -1,3 +1,4 @@
+import 'package:exercicio_semana_5/src/pages/home_page.dart';
 import 'package:exercicio_semana_5/src/pages/login_page.dart';
 import 'package:flutter/material.dart';
 
@@ -8,6 +9,7 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(initialRoute: '/', routes: {
       '/': (context) => const LoginPage(),
+      '/userPage': (context) => const UserPage(),
     });
   }
 }
