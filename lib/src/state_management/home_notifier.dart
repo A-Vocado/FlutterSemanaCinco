@@ -46,10 +46,10 @@ class HomeNotifier extends ChangeNotifier {
     stateNotifier.changeState(HomeStateLoading());
     await Future.delayed(Duration(seconds: 2));
     final response = [
-      {"match": "Inter de Meião x Atletico Maneiro", "score": "1 x 2"},
+      {"match": "aaaa", "score": "1 x 2"},
       {"match": "Coração Cansado FC x Corintios Biblico", "score": "3 x 3"},
-      {"match": "Atletico Maneiro x Flamingos de Regatas", "score": "0 x 1"},
-      {"match": "Fake Madrid x Coqueiros", "score": "3 x 2"},
+      {"match": "Ataao x Flamingos de Regatas", "score": "0 x 1"},
+      {"match": "Faad x Coqueiros", "score": "3 x 2"},
     ];
 
     for (var game in response) {

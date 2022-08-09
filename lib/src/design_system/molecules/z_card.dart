@@ -8,22 +8,18 @@ import 'package:flutter/src/widgets/framework.dart';
 class ZCard extends StatelessWidget {
   const ZCard({
     Key? key,
-    required this.teamName1,
-    required this.teamName2,
-    required this.score1,
-    required this.score2,
+    required this.match,
+    required this.score,
   }) : super(key: key);
 
-  final String teamName1;
-  final String teamName2;
-  final String score1;
-  final String score2;
+  final String match;
+  final String score;
 
   @override
   Widget build(BuildContext context) {
     return Card(
       color: Color.fromARGB(255, 238, 236, 236),
-      margin: const EdgeInsets.all(16.0),
+      margin: const EdgeInsets.all(15.0),
       child: Padding(
         padding: const EdgeInsets.all(12.0),
         child: Column(
@@ -33,16 +29,16 @@ class ZCard extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                ZText14(text: 'Perna de Pau League 2022'),
-                ZTextDate(text: '10:00 - 11:30'),
+                ZText14(text: 'Campeonato Perna de Pau '),
+                ZTextDate(text: '10:30'),
               ],
             ),
             Column(
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
-                SizedBox(height: 20),
-                ZText16(text: '$teamName1 x $teamName2'),
-                ZText16(text: '$score1 x $score2'),
+                SizedBox(height: 01),
+                ZText14(text: match),
+                ZTextDate(text: score),
               ],
             ),
           ],
