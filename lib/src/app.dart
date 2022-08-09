@@ -9,7 +9,7 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(initialRoute: '/', routes: {
       '/': (context) => const LoginPage(),
-      '/userPage': (context) => const UserPage(),
+      '/userPage': (context) => const HomePage(),
     });
   }
 }

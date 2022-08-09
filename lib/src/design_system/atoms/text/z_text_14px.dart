@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class ZText14 extends StatelessWidget {
   const ZText14({Key? key, required this.text}) : super(key: key);
@@ -8,11 +9,12 @@ class ZText14 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       text,
-      style: const TextStyle(
-        fontWeight: FontWeight.w700,
-        fontFamily: 'Urbanist',
-        fontSize: 14,
-        color: Colors.black,
+      style: GoogleFonts.urbanist(
+        textStyle: TextStyle(
+          fontWeight: FontWeight.w700,
+          fontSize: 14,
+          color: Colors.black,
+        ),
       ),
     );
   }

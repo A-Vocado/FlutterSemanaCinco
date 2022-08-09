@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 
 class ZAppBar extends PreferredSize {
   ZAppBar({Key? key, required this.titleText, this.actions})
-      : super(key: key, preferredSize: const Size(500, 60), child: Container());
+      : super(key: key, preferredSize: const Size(500, 50), child: Container());
 
   final String titleText;
   final List<Widget>? actions;
