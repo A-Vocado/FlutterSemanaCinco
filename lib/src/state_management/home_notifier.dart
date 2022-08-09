@@ -29,10 +29,26 @@ class HomeNotifier extends ChangeNotifier {
     stateNotifier.changeState(HomeStateLoading());
     await Future.delayed(Duration(seconds: 2));
     final response = [
-      {"match": "Inter de Meião x Atletico Maneiro", "score": "1 x 2"},
-      {"match": "Coração Cansado FC x Corintios Biblico", "score": "3 x 3"},
-      {"match": "Atletico Maneiro x Flamingos de Regatas", "score": "0 x 1"},
-      {"match": "Fake Madrid x Coqueiros", "score": "3 x 2"},
+      {
+        "match": "Inter de Meião x Atletico Maneiro",
+        "score": "0 x 0",
+        "time": "10:30 - 12:00"
+      },
+      {
+        "match": "Coração Cansado FC x Corintios Biblico",
+        "score": "0 x 0",
+        "time": "10:30 - 12:00"
+      },
+      {
+        "match": "Atletico Maneiro x Flamingos de Regatas",
+        "score": "0 x 0",
+        "time": "10:30 - 12:00"
+      },
+      {
+        "match": "Fake Madrid x Coqueiros",
+        "score": "0 x 0",
+        "time": "10:30 - 12:00"
+      },
     ];
 
     for (var game in response) {
@@ -44,12 +60,28 @@ class HomeNotifier extends ChangeNotifier {
   void _getNewGames() async {
     listGames.clear();
     stateNotifier.changeState(HomeStateLoading());
-    await Future.delayed(Duration(seconds: 2));
+    await Future.delayed(Duration(milliseconds: 50));
     final response = [
-      {"match": "aaaa", "score": "1 x 2"},
-      {"match": "Coração Cansado FC x Corintios Biblico", "score": "3 x 3"},
-      {"match": "Ataao x Flamingos de Regatas", "score": "0 x 1"},
-      {"match": "Faad x Coqueiros", "score": "3 x 2"},
+      {
+        "match": "Inter de Meião x Atletico Maneiro",
+        "score": "1 x 2",
+        "time": "10:30 - 12:00"
+      },
+      {
+        "match": "Coração Cansado FC x Corintios Biblico",
+        "score": "3 x 3",
+        "time": "10:30 - 12:00"
+      },
+      {
+        "match": "Atletico Maneiro x Flamingos de Regatas",
+        "score": "0 x 1",
+        "time": "10:30 - 12:00"
+      },
+      {
+        "match": "Fake Madrid x Coqueiros",
+        "score": "3 x 2",
+        "time": "10:30 - 12:00"
+      },
     ];
 
     for (var game in response) {

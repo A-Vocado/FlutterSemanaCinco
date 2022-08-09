@@ -1,6 +1,4 @@
 import 'package:exercicio_semana_5/src/design_system/molecules/z_appbar.dart';
-import 'package:exercicio_semana_5/src/design_system/molecules/z_card.dart';
-import 'package:exercicio_semana_5/src/game_model.dart';
 import 'package:exercicio_semana_5/src/game_widget.dart';
 import 'package:exercicio_semana_5/src/state_management/home_event.dart';
 import 'package:exercicio_semana_5/src/state_management/home_notifier.dart';
@@ -52,13 +50,20 @@ class _HomePageState extends State<HomePage> {
                           return GameWidget(
                               game: _homeNotifier.listGames[index]);
                         }),
+                    Center(
+                        child: Padding(
+                      padding: const EdgeInsets.all(32.0),
+                      child:
+                          Text("Atualize a página para atualizar os placares."),
+                    ))
                   ],
                 ),
               ),
             );
           }
 
-          return Center(child: CircularProgressIndicator());
+          return Center(
+              child: CircularProgressIndicator(color: Color(0xFF1E232C)));
         },
       ),
     );

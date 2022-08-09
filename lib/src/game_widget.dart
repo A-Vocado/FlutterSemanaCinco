@@ -17,6 +17,7 @@ class _GameWidgetState extends State<GameWidget> {
     return ZCard(
       match: '${widget.game.match}',
       score: '${widget.game.score}',
+      time: '${widget.game.time}',
     );
   }
 }

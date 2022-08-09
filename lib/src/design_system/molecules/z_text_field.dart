@@ -47,10 +47,11 @@ class ZFormField extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => Padding(
-        padding: const EdgeInsets.all(16.0),
+        padding: const EdgeInsets.symmetric(horizontal: 24.0, vertical: 12),
         child: TextFormField(
           controller: controller,
           decoration: InputDecoration(
+            contentPadding: EdgeInsets.all(22),
             border: defaultBorder,
             errorBorder: errorBorder,
             focusedBorder: focusBorder,
